@@ -13,3 +13,10 @@ int Olio_Tartufato::cost() {
 
 }
 
+string Olio_Tartufato::getname() {
+        return pizzaname;
+        //return __cxx11::basic_string<char, char_traits<char>, allocator<char>>();
+}
+
+
+

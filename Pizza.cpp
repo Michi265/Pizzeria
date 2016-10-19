@@ -4,6 +4,7 @@
 #include "Pizza.h"
 
 
+
 int Pizza::cost() {
 
     int basecost=4;
@@ -11,8 +12,13 @@ int Pizza::cost() {
     return basecost;
 }
 
+int Pizza::getpizzaid() {
 
-Pizza::Pizza() {
-
+    return pizzaname;
 }
+
+
+
+
+
 

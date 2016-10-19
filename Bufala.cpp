@@ -13,3 +13,10 @@ int Bufala::cost() {
 
 }
 
+string Bufala::getname() {
+    return pizzaname;
+    //return __cxx11::basic_string<char, char_traits<char>, allocator<char>>();
+}
+
+
+
