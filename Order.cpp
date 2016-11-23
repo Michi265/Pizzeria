@@ -1,52 +1,37 @@
 //
-// Created by michela on 03/10/16.
+// Created by michela on 27/10/16.
 //
 
 #include "Order.h"
-#include "Client.h"
+#include "Pizza.h"
+#include "Funghi_Porcini.h"
+#include "Bufala.h"
+#include "Olio_Tartufato.h"
 
-using namespace std;
 
-bool Order::Clientresearch(int id ) {
+void Order::Add_order() {
 
-    for (int i = 0; i < clientlist.size(); i++) {
 
-        if (clientlist[i]->getid() == id) {
-            return true;
-        }
-    }
-    return false;
-}
+    Date d1(2016, 3, 4);
+    Date d2(2016, 4, 12);
 
-int Order::AddClient(Client *c) {
+    ordine_cliente.insert(std::pair<Date, string>(d1, "Funghi_Porcini"));
+    ordine_cliente.insert(std::pair<Date, string>(d1, "Bufala"));
+    ordine_cliente.insert(std::pair<Date, string>(d2, "Olio_Tartufato"));
+    ordine_cliente.insert(std::pair<Date, string>(d2, "Bufala"));
 
-    clientlist.push_back(c);
-
-    return 0;
-}
-
-void Order::VerificaCliente(Client *c) {
-
-    bool test=false;
-    test= Clientresearch(c->getid());
-    if(!test){
-        AddClient(c);
-        cout<<"Numero dei clienti aggiunti: "<< c->getid();
-    }
+    return;
 
 }
 
+void Order::Verify_order() {
 
+    Date query(2016, 4, 12);
+    auto ricerca=ordine_cliente.find(query);
+    if (ricerca==ordine_cliente.end())
+        std::cout<< "L'ordine non è stato trovato"<< std::endl;
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
