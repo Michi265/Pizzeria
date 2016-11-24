@@ -1,38 +1,29 @@
 //
-// Created by michela on 03/10/16.
+// Created by michela on 27/10/16.
 //
 
 #ifndef PIZZERIA_ORDER_H
 #define PIZZERIA_ORDER_H
 
-#include "string"
-#include "iostream"
 #include "Pizza.h"
-#include "Client.h"
-#include "vector"
+#include "Funghi_Porcini.h"
+#include "Bufala.h"
+#include "Olio_Tartufato.h"
+#include <iostream>
+#include <string>
+#include <map>
+#include "Date.h"
+
 using namespace std;
 
-class Order {
-private:
+class Order  {
+    Order(){}
 
-    vector<Client*> clientlist;
+    std::multimap<Date, string > ordine_cliente;
 
-
-public:
-
-    Order() { }
-
-
-    virtual int AddClient(Client *c);
-
-    void VerificaCliente(Client *c);
-
-    bool Clientresearch(int id);
-
-
-
+    void Add_order();
+    void Verify_order();
 
 };
-
 
 #endif //PIZZERIA_ORDER_H
