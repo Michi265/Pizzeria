@@ -4,7 +4,7 @@
 
 #include <vector>
 #include "Client.h"
-#include "Order.h"
+#include "RegistrationOrder.h"
 #include <string>
 #include <iostream>
 #include "Pizza.h"

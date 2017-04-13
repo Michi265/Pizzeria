@@ -5,16 +5,17 @@
 #include "Funghi_Porcini.h"
 #include "Pizza.h"
 
-int Funghi_Porcini::cost() {
+int Funghi_Porcini::getCost() {
 
-    int result = 0;
-    result = p->cost() + 2;
-    return result;
+    int cost=1;
+
+    return cost;
 }
 
-string Funghi_Porcini::getname() {
-    return pizzaname;
-    //return __cxx11::basic_string<char, char_traits<char>, allocator<char>>();
-}
+int Funghi_Porcini::getingredientname() {
 
+    return ingredientname;
+
+
+}
 

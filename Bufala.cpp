@@ -1,21 +1,21 @@
 //
 // Created by michela on 05/07/16.
 //
-
 #include "Bufala.h"
 #include "Pizza.h"
 
-int Bufala::cost() {
+int Bufala::getCost() {
 
-    int result=0;
-    result= p->cost()+2;
-    return result;
+    int cost=2;
 
+    return cost;
 }
 
-string Bufala::getname() {
-    return pizzaname;
-    //return __cxx11::basic_string<char, char_traits<char>, allocator<char>>();
+int Bufala::getingredientname() {
+
+    return ingredientname;
+
+
 }
 
 

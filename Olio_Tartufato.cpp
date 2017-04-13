@@ -2,21 +2,21 @@
 // Created by michela on 05/07/16.
 //
 
+
 #include "Olio_Tartufato.h"
 #include "Pizza.h"
 
-int Olio_Tartufato::cost() {
+int Olio_Tartufato::getCost() {
 
-        int result=0;
-        result= p->cost()+1;
-        return result;
+        int cost=1;
 
+        return cost;
 }
 
-string Olio_Tartufato::getname() {
-        return pizzaname;
-        //return __cxx11::basic_string<char, char_traits<char>, allocator<char>>();
+int Olio_Tartufato::getingredientname() {
+
+        return ingredientname;
+
+
 }
-
-
 

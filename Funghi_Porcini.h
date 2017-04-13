@@ -8,11 +8,12 @@
 #include "Pizza.h"
 #include "string"
 #include "iostream"
+#include "Ingredient.h"
 
 using namespace std;
 
-    class Funghi_Porcini: public Pizza {
-
+    class Funghi_Porcini: public Ingredient {
+/*
     public:
         Funghi_Porcini(Pizza* p): p(p){
             pizzaname="Funghi_Porcini";
@@ -24,7 +25,15 @@ using namespace std;
     private:
 
         Pizza* p;
-        string pizzaname;
+        std::string pizzaname;
+*/
+
+    public:
+
+        virtual int getCost() override ;
+        int getingredientname() override;
+
+        Funghi_Porcini(){}
 
 
     };
